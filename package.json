@@ -1,0 +1,36 @@
+{
+  "name": "scrat-command-install",
+  "version": "0.1.4",
+  "description": "a component installer for scrat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scrat-team/scrat-command-install.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scrat-team/scrat-command-install/issues"
+  },
+  "main": "index.js",
+  "author": "Hinc <hincubus@gmail.com>",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "superagent": "~0.18.0",
+    "write-to": "~1.0.1",
+    "decompress": "~0.2.3",
+    "rimraf": "~2.2.8",
+    "semver": "~2.3.0",
+    "debug": "~1.0.0",
+    "fis-kernel": "~2.0.3",
+    "mkdirp": "~0.5.0",
+    "colors": "~0.6.2"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "mocha --require should --reporter spec --timeout 10000"
+  }
+}
