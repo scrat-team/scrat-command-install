@@ -8,7 +8,7 @@ exports.usage = '[name] [options]';
 exports.desc = 'install component modules';
 exports.register = function (commander){
     commander
-        .option('-s, --save', 'save dependencies into json file', Boolean)
+        .option('-S, --no-save', 'save dependencies into json file', Boolean)
         .option('-c, --clean', 'clean install cache', Boolean)
         .action(function () {
             var installer = new Installer(),
